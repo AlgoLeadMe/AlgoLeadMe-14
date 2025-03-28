@@ -35,10 +35,5 @@ func solution(_ files: [String]) -> [String] {
         }
     }.map { $0.원본 }
 
-//    print(정렬할배열) // 이 지점에서 IMG01.gif가 img1.png보다 앞으로 나와서 계속 수정
-    // [(HEAD: "IMG", NUMBER: "01", TAIL: ".GIF"), (HEAD: "img", NUMBER: "1", TAIL: ".png"), (HEAD: "img", NUMBER: "02", TAIL: ".png"), (HEAD: "img", NUMBER: "2", TAIL: ".JPG"), (HEAD: "img", NUMBER: "10", TAIL: ".png"), (HEAD: "img", NUMBER: "12", TAIL: ".png")]
-    // 이거 대문자 소문자 내가 안해줬나 ? -> HEAD.lowercased()  -> 해결
-    // 튜플 joined 어떻게 ? ->  스무스하게 해주는 메소드는 없는듯 걍 미리 받아야할듯
-
     return 정렬완료배열
 }
