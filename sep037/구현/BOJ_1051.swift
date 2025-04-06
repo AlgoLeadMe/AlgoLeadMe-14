@@ -13,7 +13,7 @@ let M = firstLine[1] // 열
 
 var grid: [[Int]] = [] // 추가해야 하니까 var
 for _ in 0..<n { // 줄로 입력 받아 2차원 배열 만들기
-    let row = readLine()!.split(separator: "").map {Int($0)!}
+    let row = readLine()!.map {Int($0)!} // 이곳이 바로 문제의 부분 !
     grid.append(row)
 }
 
