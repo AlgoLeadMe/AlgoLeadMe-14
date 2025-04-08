@@ -1,5 +1,5 @@
 struct Heap {
-    var elements: [Int] = []
+    private var elements: [Int] = []
     
     mutating func insert(node: Int) {
         self.elements.append(node)
@@ -9,9 +9,7 @@ struct Heap {
             let parent = (index - 1) / 2
             
             if elements[parent] < elements[index] {
-                let temp = elements[parent]
-                elements[parent] = elements[index]
-                elements[index] = temp
+                elements.swapAt(index, parent)
                 index = parent
             } else {
                 break
@@ -30,6 +28,7 @@ struct Heap {
         
         var index = 0
         while index < elements.count {
+            
             let left = index * 2 + 1
             let right = index * 2 + 2
             var current = index
@@ -62,4 +61,3 @@ for _ in 0..<N {
         heap.insert(node: input)
     }
 }
-
