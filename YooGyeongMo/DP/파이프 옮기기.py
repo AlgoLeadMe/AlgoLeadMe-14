@@ -1,29 +1,35 @@
 n = int(input())
+board = [list(map(int, input().split())) for _ in range(n)]
 
-board = []
+# 상태: 가로(0), 세로(1), 대각선(2)
+# dp[state][r][c] = 해당 위치에서 가능한 경로 수
+dp = [[[-1] * n for _ in range(n)] for _ in range(3)]
 
-for _ in range(n):
-    board.append(list(map(int,input().split())))
+def move_pipe(state, r, c):
+    # 끝에 도달하면 1
+    if r == n - 1 and c == n - 1:
+        return 1
 
-answer = 0
+    # 이미 계산된 경로라면 재사용
+    if dp[state][r][c] != -1:
+        return dp[state][r][c]
 
-def move_pipe(state,r,c):
-    global answer
+    total = 0
 
-    if r == n-1 and c == n-1:
-        answer+=1
-        return
+    # 가로 이동
+    if state != 1 and c + 1 < n and board[r][c + 1] == 0:
+        total += move_pipe(0, r, c + 1)
 
-    can_move_h = c + 1 < n and board[r][c+1] == 0
-    can_move_v = r + 1 < n and board[r+1][c] == 0
+    # 세로 이동
+    if state != 0 and r + 1 < n and board[r + 1][c] == 0:
+        total += move_pipe(1, r + 1, c)
 
-    if state != 1 and can_move_h:
-        move_pipe(0, r, c + 1)
-    if state != 0 and can_move_v:
-        move_pipe(1, r+1, c)
-    if c + 1 < n and r + 1 < n :
-        if board[r][c+1] == 0 and board[r+1][c] == 0 and board[r+1][c+1] == 0:
-            move_pipe(2, r + 1, c + 1)
+    # 대각선 이동
+    if r + 1 < n and c + 1 < n:
+        if board[r][c + 1] == 0 and board[r + 1][c] == 0 and board[r + 1][c + 1] == 0:
+            total += move_pipe(2, r + 1, c + 1)
 
-move_pipe(0,0,1)
-print(answer)
+    dp[state][r][c] = total
+    return total
+
+print(move_pipe(0, 0, 1))
