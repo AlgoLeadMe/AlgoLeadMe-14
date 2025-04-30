@@ -4,5 +4,6 @@
 |:----:|:---------:|:----:|:-----:|:----:|
 | 1차시 | 2025.03.29 |  구현  | [개미](https://www.acmicpc.net/problem/3048)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/3|
 | 2차시 | 2025.04.11 |  에라토스테네스의채  | [소-난다!](https://www.acmicpc.net/problem/19699)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/10|
+| 3차시 | 2025.04.29 |  그리디  | [알바생 강호](https://www.acmicpc.net/problem/1758)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/14|
 
 ---
