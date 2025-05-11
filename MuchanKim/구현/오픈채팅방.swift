@@ -3,14 +3,10 @@ import Foundation
 typealias UserID = String
 typealias Nickname = String
 
-enum Action: String, CustomStringConvertible {
+enum Action: String {
     case enter = "Enter"
     case leave = "Leave"
     case change = "Change"
-    
-    var description: String {
-        return self.rawValue
-    }
 }
 
 func createMessage(_ action: Action, _ userId: UserID, _ userDict: [UserID: Nickname]) -> String? {
