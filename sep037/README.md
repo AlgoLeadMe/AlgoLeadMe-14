@@ -7,5 +7,7 @@
 |:----:|:---------:|:----:|:-----:|:----:|
 | 1차시 | 2025.04.05 |  구현  | [숫자 정사각형](https://www.acmicpc.net/problem/1051)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/6|
 | 2차시 | 2025.04.10 |  DFS  | [트리의 부모 찾기](https://www.acmicpc.net/problem/11725)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/12|
-| 3차시 | 2025.04.38 |  정렬  | [접미사 배열](https://www.acmicpc.net/problem/11656)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/13|
+| 3차시 | 2025.04.28 |  정렬  | [접미사 배열](https://www.acmicpc.net/problem/11656)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/13|
+| 4차시 | 2025.05.11 |  DP  | [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/21|
+
 ---
