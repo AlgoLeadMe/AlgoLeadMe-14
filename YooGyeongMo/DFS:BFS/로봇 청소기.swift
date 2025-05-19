@@ -43,7 +43,7 @@ for _ in 0..<N {
 func turnLeft(from direction: Int) -> Int {
     return (direction + 3) % 4
 }
-
+
 func dfs( _ count: Int, _ nowDir: Int,_ x: Int, _ y:Int) {
     
     // 1. 현재 위치가 청소되지 않았다면 -> 청소
