@@ -7,7 +7,7 @@ func puzzle(diffs: [Int], times: [Int], level: Int) -> Int{
             result += times[i]
         } else {
             let discorrectCount = diffs[i] - level
-            let discorrectUseTime = (i > 0 ? times[i - 1] : 0) + times[i]
+            let discorrectUseTime = times[i - 1] + times[i]
             let totalUseTime = discorrectUseTime * discorrectCount + times[i]
             result += totalUseTime
         }
