@@ -6,4 +6,5 @@
 | 2차시 | 2025.04.08 |  Heap  | [최대힙](https://www.acmicpc.net/problem/11279)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/7|
 | 3차시 | 2025.04.30 |  투포인터  | [먹을 것인가 먹힐 것인가](https://www.acmicpc.net/problem/7795)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/17|
 | 4차시 | 2025.05.13 |  구현  | [후보 추천하기](https://www.acmicpc.net/problem/1713)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/24|
+| 5차시 | 2025.05.22 |  이분탐색  | [퍼즐게임 챌린지](https://school.programmers.co.kr/learn/courses/30/lessons/340212)|https://github.com/AlgoLeadMe/AlgoLeadMe-14/pull/27|
 ---
